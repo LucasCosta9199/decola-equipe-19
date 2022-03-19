@@ -24,7 +24,7 @@
           <router-link to="/sitesconfiaveis">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
+                <v-icon>mdi-web-check</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Sites de Verificação</v-list-item-title>
             </v-list-item>
@@ -33,7 +33,7 @@
           <router-link to="/paginacadastro">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
+                <v-icon>mdi-note-plus</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Cadastro de Sites</v-list-item-title>
             </v-list-item>

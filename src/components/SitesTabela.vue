@@ -30,6 +30,9 @@ export default {
 <style scoped>
 .linha-tabela img {
   width: 200px;
-  
+    
+}
+img {
+  align-items: center;
 }
 </style>
