@@ -21,7 +21,7 @@
             </v-list-item>
           </router-link>
 
-          <router-link to="/sitesconnfiaveis">
+          <router-link to="/sitesconfiaveis">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-home</v-icon>
