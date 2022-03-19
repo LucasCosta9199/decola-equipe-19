@@ -6,7 +6,7 @@
         <tr class="linha-tabela" v-for="site of sitesLista" :key="site.id">
 
             <img class="center home-image mb-4 mr-4 ml-4"  :src="site.imagem" :alt="site.nome"/>
-            <p class="pl-2 text-center">{{ site.nome }}</p>
+            <p class="pl-2 text-center">{{ site.nome.toUpperCase() }}</p>
             <p>{{ site.descricao }}</p>
 
         </tr>
