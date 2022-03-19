@@ -25,7 +25,6 @@ export default {
         this.sitesLista = json;
       })
   }
-  
 }
 </script>
 

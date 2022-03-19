@@ -9,7 +9,7 @@
             </div>
             <h4 class="nomesite text-center">{{ site.nome.toUpperCase() }}</h4>
             <p class="text-justify ml-2 mr-2" >{{ site.descricao }}</p>
-
+            <v-divider class = "mr-4 ml-4"></v-divider>
         </tr>
       </tbody>
     </template>

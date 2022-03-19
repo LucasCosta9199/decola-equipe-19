@@ -13,6 +13,8 @@
       e sua veracidade.
     </p>
 
+  <v-divider class = "mr-4 ml-4"></v-divider>
+
     <h2 class="tituloHome text-h6 text-center mb-3 mt-5">Últimas notícias</h2>
     
     <p class="text-center"> "Vacina contra COVID-19 contém chip" </p>
