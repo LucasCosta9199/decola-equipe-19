@@ -10,6 +10,13 @@
     <h4 class="subtitulo mt-10">Cadastre aqui:</h4>
     <v-form ref="form" v-model="valid" lazy-validatio>
       <v-text-field
+        v-model="email"
+        :rules="emailRules"
+        label="E-mail"
+        required
+      ></v-text-field>
+
+      <v-text-field
         v-model="name"
         :rules="nameRules"
         label="Site Recomendado"
@@ -18,8 +25,8 @@
 
       <v-text-field
         v-model="email"
-        :rules="emailRules"
-        label="E-mail"
+        :rules="nameRules"
+        label="Descrição"
         required
       ></v-text-field>
 
@@ -81,6 +88,7 @@ export default {
     valid: true,
     name: "",
     nameRules: [(v) => !!v || "Digite o link do site"],
+    descricaoRules:[(v) => !!v || "Digite algo"],
     email: "",
     emailRules: [
       (v) => !!v || " Digite seu E-mail",
@@ -92,6 +100,8 @@ export default {
       "Pesquisa de Notícias",
       "Canal de denúncias",
       "Checagem de fatos, fotos, videos e textos",
+      "Aba de sugestões",
+      "Canal de denúncias"
     ],
     checkbox: false,
     dialog: false,

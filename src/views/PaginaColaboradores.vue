@@ -49,11 +49,27 @@
         </tbody>
       </template>
     </v-simple-table>
+    <div class="text-center mt-12">
+        <p>Avalie nosso trabalho!</p>
+        <v-rating
+          v-model="rating"
+          color="yellow darken-3"
+          background-color="grey darken-1"
+          empty-icon="$ratingFull"
+          half-increments
+          hover
+          large
+        ></v-rating>
+      </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+    data: () => ({
+      rating: 3,
+    }),
+}
 </script>
 
 <style scoped>
