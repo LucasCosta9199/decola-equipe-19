@@ -1,6 +1,6 @@
 <template>
   <div class="app-top-bar">
-    <v-app-bar color="#001a69" dark>
+    <v-app-bar color="#DCDCDC">
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title class="pl-0">Menu</v-toolbar-title>
       <v-menu left bottom> </v-menu>

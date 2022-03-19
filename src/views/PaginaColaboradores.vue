@@ -1,7 +1,7 @@
 <template>
     <div class="colaboradores">
 
-        <h2 class="text-center text-h5 text-left mb-9 mt-5">COLABORADORES DO PROJETO</h2>
+        <h2 class="titulopagina text-center mb-9 mt-5">COLABORADORES DO PROJETO</h2>
         <v-simple-table>
         <template v-slot:default>
             <tbody>
@@ -53,4 +53,8 @@ export default {};
     font-weight: bold;
     font-size: 17px;
 }
+.titulopagina{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #191970;
+  }
 </style>

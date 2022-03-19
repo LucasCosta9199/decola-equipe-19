@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h2 class="tituloHome text-h6 text-center mb-3 mt-5">AÇÃO CONTRA AS FAKE NEWS</h2>
+    <h2 class="tituloHome text-center mb-3 mt-5">AÇÃO CONTRA AS FAKE NEWS</h2>
     <v-img
       class="home-image mb-4 mt-4 mr-5 ml-5" alt="real ou feiki" src="https://imageproxy.ifunny.co/crop:x-20,resize:640x,quality:90x75/images/49825c86590cb82a99b9881362515e2eee43423949f93fd94643b2da00dcc6ac_1.jpg">
     </v-img>
@@ -15,7 +15,7 @@
 
   <v-divider class = "mr-4 ml-4"></v-divider>
 
-    <h2 class="tituloHome text-h6 text-center mb-3 mt-5">VERDADEIRO OU FALSO?</h2>
+    <h3 class="tituloHome  text-center mb-3 mt-5">VERDADEIRO OU FALSO?</h3>
     
     <p class="text-center"> "Vacina contra COVID-19 contém chip" </p>
     <v-img
@@ -44,7 +44,8 @@ export default {
 <style scoped>
 
   .tituloHome{
-    font-family: 'Courier';
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #191970;
   }
   .verdade{
     color: green;

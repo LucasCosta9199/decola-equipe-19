@@ -1,8 +1,12 @@
 <template>
   <v-container>
-    <h3 class="text-h5 text-center mb-3 mt-5">
-      Gostaria de recomendar um site para a nossa página de "Sites Confiáveis"?
-    </h3>
+    <h2 class="titulopagina text-center mb-3 mt-5">
+      CADASTRO DE SITES CONFIÁVEIS
+    </h2>
+    <p class="text-justify">É possível você contribuir com o nosso projeto cadastrando
+      um site que tenha o mesmo propósito que o nosso. Após a análise
+      da nossa moderação, o site aparece na nossa aba "Sites Confiáveis".
+    </p>
     <h4 class="subtitulo">Deixe seu contato abaixo:</h4>
     <v-form ref="form" v-model="valid" lazy-validatio>
       <v-text-field
@@ -107,4 +111,8 @@ export default {
 </script>
 
 <style scoped>
+  .titulopagina{
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #191970;
+    }
 </style>
