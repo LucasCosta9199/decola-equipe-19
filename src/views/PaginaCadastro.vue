@@ -94,6 +94,7 @@ export default {
       "Checagem de fatos, fotos, videos e textos",
     ],
     checkbox: false,
+    dialog: false
   }),
 
   methods: {
@@ -107,6 +108,7 @@ export default {
       this.$refs.form.resetValidation();
     },
   },
+   
 };
 </script>
 

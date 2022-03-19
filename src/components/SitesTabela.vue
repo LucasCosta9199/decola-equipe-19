@@ -4,10 +4,11 @@
 
       <tbody>
         <tr class="linha-tabela" v-for="site of sitesLista" :key="site.id">
-
-            <img class="center home-image mb-4 mr-4 ml-4"  :src="site.imagem" :alt="site.nome"/>
-            <p class="pl-2 text-center">{{ site.nome }}</p>
-            <p>{{ site.descricao }}</p>
+            <div>
+                <img class="mb-4 ml-4"  :src="site.imagem" :alt="site.nome"/>
+            </div>
+            <h3 class="nomesite text-h5 mb-1 text-center">{{ site.nome }}</h3>
+            <p class="text-justify">{{ site.descricao }}</p>
 
         </tr>
       </tbody>
@@ -32,7 +33,12 @@ export default {
   width: 200px;
     
 }
-img {
-  align-items: center;
+div {
+    text-align: center;
+}
+.nomesite{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: purple;
+    font-weight: 600;
 }
 </style>
