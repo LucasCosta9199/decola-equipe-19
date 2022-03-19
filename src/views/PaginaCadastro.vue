@@ -7,7 +7,6 @@
     <v-form ref="form" v-model="valid" lazy-validatio>
       <v-text-field
         v-model="name"
-        :counter="10"
         :rules="nameRules"
         label="Site Recomendado"
         required
@@ -28,45 +27,43 @@
         required
       ></v-select>
 
-      
-        <v-dialog
+      <v-dialog
         v-model="dialog"
-        width="500" :disabled="!valid" color="success" class="mr-4" @click="validate">
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          color="light green"
-          dark
-          v-bind="attrs"
-          v-on="on"
-          @click="reset"
-        >
-          Enviar
-        </v-btn>
-      </template>
-
-      <v-card>
-        <v-card-title class="text-h6 grey lighten-2">
-          Obrigado por sua contribução.
-        </v-card-title>
-
-        <v-card-text>
-          Seus dados fora enviados para análise de um moderador! 
-        </v-card-text>
-
-        <v-divider></v-divider>
-
-        <v-card-actions>
-          <v-spacer></v-spacer>
+        width="500"
+        :disabled="!valid"
+        color="success"
+        class="mr-4"
+        @click="validate"
+      >
+        <template v-slot:activator="{ on, attrs }">
           <v-btn
-            color="primary"
-            text
-            @click="dialog = false"
+            color="light green"
+            dark
+            v-bind="attrs"
+            v-on="on"
+            @click="reset"
           >
-            OK!
+            Enviar
           </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
+        </template>
+
+        <v-card>
+          <v-card-title class="text-h6 grey lighten-2">
+            Obrigado por sua contribução.
+          </v-card-title>
+
+          <v-card-text>
+            Seus dados foram enviados para análise de um moderador!
+          </v-card-text>
+
+          <v-divider></v-divider>
+
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn color="primary" text @click="dialog = false"> OK! </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
 
       <v-btn color="error" class="mr-4" @click="reset"> Limpar campos </v-btn>
     </v-form>
@@ -78,10 +75,7 @@ export default {
   data: () => ({
     valid: true,
     name: "",
-    nameRules: [
-      (v) => !!v || "Digite o link do site",
-      (v) => (v && v.length <= 10) || "O nome deve ter menos de 10 caracteres",
-    ],
+    nameRules: [(v) => !!v || "Digite o link do site"],
     email: "",
     emailRules: [
       (v) => !!v || " Digite seu E-mail",
@@ -95,7 +89,7 @@ export default {
       "Checagem de fatos, fotos, videos e textos",
     ],
     checkbox: false,
-    dialog: false
+    dialog: false,
   }),
 
   methods: {
@@ -109,7 +103,6 @@ export default {
       this.$refs.form.resetValidation();
     },
   },
-   
 };
 </script>
 
