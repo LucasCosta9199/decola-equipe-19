@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h3 class="text-h5 text-center mb-3 mt-5">
-      Gostaria de se cadastrar como site verificador de Fake News?
+      Gostaria de recomendar um site para a nossa página de "Sites Confiáveis"?
     </h3>
     <h4 class="subtitulo">Deixe seu contato abaixo:</h4>
     <v-form ref="form" v-model="valid" lazy-validatio>
@@ -38,6 +38,7 @@
           dark
           v-bind="attrs"
           v-on="on"
+          @click="reset"
         >
           Enviar
         </v-btn>
