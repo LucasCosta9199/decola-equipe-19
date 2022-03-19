@@ -3,6 +3,17 @@
     <v-app-bar color="#DCDCDC">
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title class="pl-0">Menu</v-toolbar-title>
+
+        <v-spacer></v-spacer>
+
+        <v-switch class="mt-6 " 
+            :value="darkMode" 
+            @change="toggleDarkMode">
+        </v-switch>
+       <v-list-item-icon >
+                <v-icon size="20">mdi-brightness-6</v-icon>
+        </v-list-item-icon>
+
       <v-menu left bottom> </v-menu>
     </v-app-bar>
 
@@ -63,6 +74,12 @@ export default {
     drawer: false,
     group: null,
   }),
+    methods: {
+      toggleDarkMode: function () {
+        this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+        this.darkMode = !this.darkMode;
+      }
+  },
 };
 </script>
 
