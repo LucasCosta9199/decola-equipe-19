@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
- //   component: HomeView
+    //   component: HomeView
   },
   {
     path: '/sitesconfiaveis',
@@ -17,7 +17,16 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/SitesConfiaveis.vue')
-  }
+  },
+  {
+    path: '/paginacadastro',
+    name: 'about',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/PaginaCadastro.vue')
+  },
+
 ]
 
 const router = new VueRouter({
