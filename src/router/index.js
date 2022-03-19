@@ -20,6 +20,11 @@ const routes = [
     name: 'cadastro',
     component: () => import(/* webpackChunkName: "about" */ '../views/PaginaCadastro.vue')
   },
+  {
+    path: '/colaboradores',
+    name: 'colaboradores',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PaginaColaboradores.vue')
+  },
 
 ]
 
