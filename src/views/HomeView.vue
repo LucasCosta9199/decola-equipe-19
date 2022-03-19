@@ -15,7 +15,17 @@
 
     <h2 class="tituloHome text-h6 text-center mb-3 mt-5">Últimas notícias</h2>
     
+    <p class="text-center"> "Vacina contra COVID-19 contém chip" </p>
+    <v-img
+      class="home-image mb-6 mr-5 ml-5" alt="real ou feiki" src="https://t2.tudocdn.net/548257?w=646&h=284">
+    </v-img>
+    <h3 class ="mentira text-center mb-3">FALSO</h3>
 
+    <p class="mt-12 text-center"> "Mulher trai marido com morador de rua" </p>
+    <v-img
+      class="home-image mb-2 mr-5 ml-5" alt="real ou feiki" src="https://mrnews.com.br/wp-content/uploads/2022/03/Screenshot_20220318-121857_Chrome.jpg">
+    </v-img>
+    <h3 class ="verdade text-center mb-3 mt-1">VERDADEIRO</h3>
 
 
   </div>
@@ -34,6 +44,13 @@ export default {
   .tituloHome{
     font-family: 'Courier';
   }
+  .verdade{
+    color: green;
+  }
+  .mentira{
+    color: red;
+  }
+  
 
 
 </style>
