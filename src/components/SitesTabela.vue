@@ -1,22 +1,16 @@
 <template>
   <v-simple-table>
     <template v-slot:default>
-      <thead>
-        <tr>
-          <th colspan="2" class="text-left">Sites</th>
-          <th class="text-right">Descrição</th>
-        </tr>
-      </thead>
+
       <tbody>
-        <tr v-for="(site, index) of sitesLista" :key="site.id">
-          <td>{{ index + 1 }}</td>
-          <td>
-            <v-avatar size="24">
+        <tr v-for="site of sitesLista" :key="site.id">
+          
+            <v-avatar size="260" position= 'center' >
               <img :src="site.imagem" :alt="site.nome"/>
             </v-avatar>
-            <span class="pl-2">{{ site.nome }}</span>
-          </td>
-          <td class="text-right">{{ site.descricao }}</td>
+            <p class="pl-2">{{ site.nome }}</p>
+          
+          <p>{{ site.descricao }}</p>
         </tr>
       </tbody>
     </template>
