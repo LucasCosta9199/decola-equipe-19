@@ -8,15 +8,15 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(clube, index) of clubesOrdenados" :key="clube.id">
+        <tr v-for="(site, index) of sitesLista" :key="site.id">
           <td>{{ index + 1 }}</td>
           <td>
             <v-avatar size="24">
-              <img :src="clube.escudo" :alt="clube.nome"/>
+              <img :src="site.escudo" :alt="site.nome"/>
             </v-avatar>
-            <span class="pl-2">{{ clube.nome }}</span>
+            <span class="pl-2">{{ site.nome }}</span>
           </td>
-          <td class="text-right">{{ clube.pontos }}</td>
+          <td class="text-right">{{ site.pontos }}</td>
         </tr>
       </tbody>
     </template>
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: 'ClubesTabela',
+  name: 'SitesTabela',
   props: {
     sitesLista: {
       type: Array,
