@@ -5,7 +5,7 @@
     </h2>
     <p class="text-justify">É possível você contribuir com o nosso projeto cadastrando
       um site que tenha o propósito de combate as fakes news. Após a análise
-      da nossa moderação, o site aparece na nossa aba "Sites Confiáveis".
+      da nossa moderação, o site aparece na nossa aba "Sites de Verificação".
     </p>
     <h4 class="subtitulo mt-10">Cadastre aqui:</h4>
     <v-form ref="form" v-model="valid" lazy-validatio>
