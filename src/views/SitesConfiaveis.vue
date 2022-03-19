@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h2 class="text-center text-h5 text-left mb-3 mt-5">Lista de Sites confiáveis</h2>
+    <h2 class="titulopagina text-center mb-3 mt-5">SITES CONFIÁVEIS</h2>
     <SitesTabela :sitesLista="sitesLista"/>
   </v-container>
 </template>
@@ -29,5 +29,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .titulopagina{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
 </style>

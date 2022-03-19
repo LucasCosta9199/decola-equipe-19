@@ -1,14 +1,15 @@
 <template>
   <v-simple-table>
     <template v-slot:default>
-
       <tbody>
         <tr class="linha-tabela" v-for="site of sitesLista" :key="site.id">
             <div>
                 <img class="center home-image mt-4 mb-4 mr-4 ml-4"  :src="site.imagem" :alt="site.nome"/>
             </div>
-            <h3 class="nomesite text-center">{{ site.nome.toUpperCase() }}</h3>
-            <p class="text-justify ml-2 mr-2" >{{ site.descricao }}</p>
+            <div class="texto">
+                <h3 class="mb-5 nomesite text-center">{{ site.nome.toUpperCase() }}</h3>
+                <p class="text-justify  ml-2 mr-2" >{{ site.descricao }}</p>
+            </div>
             <v-divider class = "mr-4 ml-4"></v-divider>
         </tr>
       </tbody>
@@ -41,5 +42,9 @@ div {
     
     color: purple;
     font-weight: 600;
+}
+
+.texto{
+    background-color: GhostWhite;
 }
 </style>
