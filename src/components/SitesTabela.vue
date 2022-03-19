@@ -5,7 +5,7 @@
       <tbody>
         <tr v-for="site of sitesLista" :key="site.id">
           
-            <v-avatar size="150" >
+            <v-avatar size="260" position= 'center' >
               <img :src="site.imagem" :alt="site.nome"/>
             </v-avatar>
             <p class="pl-2">{{ site.nome }}</p>
