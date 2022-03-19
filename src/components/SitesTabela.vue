@@ -3,8 +3,8 @@
     <template v-slot:default>
       <thead>
         <tr>
-          <th colspan="2" class="text-left">Clube</th>
-          <th class="text-right">Pontos</th>
+          <th colspan="2" class="text-left">Sites</th>
+          <th class="text-right">Descrição</th>
         </tr>
       </thead>
       <tbody>
@@ -12,11 +12,11 @@
           <td>{{ index + 1 }}</td>
           <td>
             <v-avatar size="24">
-              <img :src="site.escudo" :alt="site.nome"/>
+              <img :src="site.imagem" :alt="site.nome"/>
             </v-avatar>
             <span class="pl-2">{{ site.nome }}</span>
           </td>
-          <td class="text-right">{{ site.pontos }}</td>
+          <td class="text-right">{{ site.descricao }}</td>
         </tr>
       </tbody>
     </template>

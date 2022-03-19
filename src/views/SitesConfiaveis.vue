@@ -1,16 +1,18 @@
 <template>
   <v-container>
     <h2 class="text-h5 text-center mb-3 mt-5">Lista de Sites confiáveis</h2>
-    
+    <SitesTabela :clubesOrdenados="sitesLista"/>
   </v-container>
 </template>
 
 <script>
-
+import SitesTabela from '../components/SitesTabela';
 
 export default {
   name:'SitesConfiaveis',
-  
+  components:{
+    SitesTabela
+  },
   data(){
     return{
       sitesLista: []
