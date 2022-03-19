@@ -24,7 +24,7 @@
       ></v-text-field>
 
       <v-text-field
-        v-model="email"
+        v-model="descricao"
         :rules="descricaoRules"
         label="Descrição"
         required
@@ -90,6 +90,7 @@ export default {
     nameRules: [(v) => !!v || "Digite o link do site"],
     descricaoRules:[(v) => !!v || "Digite algo"],
     email: "",
+    descricao:"",
     emailRules: [
       (v) => !!v || " Digite seu E-mail",
       (v) => /.+@.+\..+/.test(v) || "O E-mail deve ser válido",
