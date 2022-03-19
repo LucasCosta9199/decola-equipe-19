@@ -3,14 +3,12 @@
     <template v-slot:default>
 
       <tbody>
-        <tr v-for="site of sitesLista" :key="site.id">
-          
-            <v-avatar size="260" position= 'center' >
-              <img :src="site.imagem" :alt="site.nome"/>
-            </v-avatar>
-            <p class="pl-2">{{ site.nome }}</p>
-          
-          <p>{{ site.descricao }}</p>
+        <tr class="linha-tabela" v-for="site of sitesLista" :key="site.id">
+
+            <img class="center home-image mb-4 mr-4 ml-4"  :src="site.imagem" :alt="site.nome"/>
+            <p class="pl-2 text-center">{{ site.nome }}</p>
+            <p>{{ site.descricao }}</p>
+
         </tr>
       </tbody>
     </template>
@@ -28,3 +26,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.linha-tabela img {
+  width: 200px;
+  
+}
+</style>
