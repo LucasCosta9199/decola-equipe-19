@@ -5,9 +5,9 @@
       <tbody>
         <tr class="linha-tabela" v-for="site of sitesLista" :key="site.id">
             <div>
-                <img class="center home-image mb-4 mr-4 ml-4"  :src="site.imagem" :alt="site.nome"/>
+                <img class="center home-image mt-4 mb-4 mr-4 ml-4"  :src="site.imagem" :alt="site.nome"/>
             </div>
-            <h4 class="nomesite text-center">{{ site.nome.toUpperCase() }}</h4>
+            <h3 class="nomesite text-center">{{ site.nome.toUpperCase() }}</h3>
             <p class="text-justify ml-2 mr-2" >{{ site.descricao }}</p>
             <v-divider class = "mr-4 ml-4"></v-divider>
         </tr>
@@ -37,7 +37,8 @@ div {
     text-align: center;
 }
 .nomesite{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     color: purple;
     font-weight: 600;
 }
