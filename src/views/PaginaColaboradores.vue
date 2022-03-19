@@ -1,7 +1,7 @@
 <template>
     <div class="colaboradores">
 
-        <h2 class="text-center text-h5 text-left mb-9 mt-5">Colaboradores do projeto</h2>
+        <h2 class="text-center text-h5 text-left mb-9 mt-5">COLABORADORES DO PROJETO</h2>
         <v-simple-table>
         <template v-slot:default>
             <tbody>
