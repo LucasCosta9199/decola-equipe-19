@@ -1,9 +1,9 @@
 <template>
   <v-container>
-    <h3 class="titulo text-h6">
-      Gostaria de se cadastrar com site verificador de noticias falsas?
+    <h3 class="text-h5 text-center mb-3 mt-5">
+      Gostaria de se cadastrar como site verificador de Fake News?
     </h3>
-    <h4 class="subtitulo">Deixe seu contato abaixo</h4>
+    <h4 class="subtitulo">Deixe seu contato abaixo:</h4>
     <v-form ref="form" v-model="valid" lazy-validatio>
       <v-text-field
         v-model="name"
@@ -23,25 +23,16 @@
       <v-select
         v-model="select"
         :items="items"
-        :rules="[(v) => !!v || 'Item is required']"
-        label="Item"
+        :rules="[(v) => !!v || 'Nos diga o que você faz']"
+        label="O que você faz?"
         required
       ></v-select>
 
-      <v-checkbox
-        v-model="checkbox"
-        :rules="[(v) => !!v || 'You must agree to continue!']"
-        label="Do you agree?"
-        required
-      ></v-checkbox>
-
       <v-btn :disabled="!valid" color="success" class="mr-4" @click="validate">
-        Validate
+        Cadastrar
       </v-btn>
 
-      <v-btn color="error" class="mr-4" @click="reset"> Reset Form </v-btn>
-
-      <v-btn color="warning" @click="resetValidation"> Reset Validation </v-btn>
+      <v-btn color="error" class="mr-4" @click="reset"> Limpar campos </v-btn>
     </v-form>
   </v-container>
 </template>
@@ -52,16 +43,21 @@ export default {
     valid: true,
     name: "",
     nameRules: [
-      (v) => !!v || "Name is required",
-      (v) => (v && v.length <= 10) || "Name must be less than 10 characters",
+      (v) => !!v || "Digite se nome",
+      (v) => (v && v.length <= 10) || "O nome deve ter menos de 10 caracteres",
     ],
     email: "",
     emailRules: [
-      (v) => !!v || "E-mail is required",
-      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+      (v) => !!v || " Digite seu E-mail",
+      (v) => /.+@.+\..+/.test(v) || "O E-mail deve ser válido",
     ],
     select: null,
-    items: ["Item 1", "Item 2", "Item 3", "Item 4"],
+    items: [
+      "Checagem de fatos",
+      "Pesquisa de Notícias",
+      "Canal de denúncias",
+      "Checagem de fatos, fotos, videos e textos",
+    ],
     checkbox: false,
   }),
 
