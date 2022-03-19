@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h2 class="text-h5 text-right mb-3 mt-5">Lista de Sites confiáveis</h2>
+    <h2 class="text-h5 text-left mb-3 mt-5">Lista de Sites confiáveis</h2>
     <SitesTabela :sitesLista="sitesLista"/>
   </v-container>
 </template>
