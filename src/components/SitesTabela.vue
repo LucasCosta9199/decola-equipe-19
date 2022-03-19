@@ -45,6 +45,6 @@ div {
 }
 
 .texto{
-    background-color: GhostWhite;
+    background-color: whitesmoke;
 }
 </style>
