@@ -4,11 +4,10 @@
 
       <tbody>
         <tr class="linha-tabela" v-for="site of sitesLista" :key="site.id">
-            <div>
-                <img class="mb-4 ml-4"  :src="site.imagem" :alt="site.nome"/>
-            </div>
-            <h3 class="nomesite text-h5 mb-1 text-center">{{ site.nome }}</h3>
-            <p class="text-justify">{{ site.descricao }}</p>
+
+            <img class="center home-image mb-4 mr-4 ml-4"  :src="site.imagem" :alt="site.nome"/>
+            <p class="pl-2 text-center">{{ site.nome.toUpperCase() }}</p>
+            <p>{{ site.descricao }}</p>
 
         </tr>
       </tbody>
