@@ -4,10 +4,10 @@
       CADASTRO DE SITES CONFIÁVEIS
     </h2>
     <p class="text-justify">É possível você contribuir com o nosso projeto cadastrando
-      um site que tenha o mesmo propósito que o nosso. Após a análise
+      um site que tenha o propósito de combate as fakes news. Após a análise
       da nossa moderação, o site aparece na nossa aba "Sites Confiáveis".
     </p>
-    <h4 class="subtitulo">Deixe seu contato abaixo:</h4>
+    <h4 class="subtitulo mt-10">Cadastre aqui:</h4>
     <v-form ref="form" v-model="valid" lazy-validatio>
       <v-text-field
         v-model="name"
@@ -26,7 +26,7 @@
       <v-select
         v-model="select"
         :items="items"
-        :rules="[(v) => !!v || 'Nos diga a função primrária deste site']"
+        :rules="[(v) => !!v || 'Nos diga a função primária deste site']"
         label="Assunto do site"
         required
       ></v-select>
@@ -46,6 +46,7 @@
             v-bind="attrs"
             v-on="on"
             @click="reset"
+            class="mr-10"
           >
             Enviar
           </v-btn>
@@ -69,7 +70,7 @@
         </v-card>
       </v-dialog>
 
-      <v-btn color="error" class="mr-4" @click="reset"> Limpar campos </v-btn>
+      <v-btn color="error" class="ml-14" @click="reset"> Limpar campos </v-btn>
     </v-form>
   </v-container>
 </template>
