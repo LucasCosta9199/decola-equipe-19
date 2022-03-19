@@ -12,7 +12,7 @@
                     </v-avatar>
                 </td>
                 <td>
-                    <p>Anabel Cristina</p>
+                    <p class="nome">Anabel Cristina</p>
                     <p>
                         <a href="https://avatars.githubusercontent.com/u/48037781?v=4">GitHub</a>
                     </p>
@@ -28,7 +28,7 @@
                     </v-avatar>
                 </td>
                 <td>
-                    <p>Lucas Costa</p>
+                    <p class="nome">Lucas Costa</p>
                     <p>
                         <a href="https://github.com/LucasCosta9199">GitHub</a>
                     </p>
@@ -49,4 +49,8 @@ export default {};
 </script>
 
 <style scoped>
+.nome {
+    font-weight: bold;
+    font-size: 17px;
+}
 </style>
