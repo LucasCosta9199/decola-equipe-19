@@ -6,7 +6,9 @@
             <div>
                 <img class="center home-image mt-4 mb-4 mr-4 ml-4"  :src="site.imagem" :alt="site.nome"/>
             </div>
-            <h3 class="mb-5 nomesite text-center">{{ site.nome.toUpperCase() }}</h3>
+            <a :href="site.site">
+              <h3 class="mb-5 nomesite text-center">{{ site.nome.toUpperCase() }}</h3>
+            </a>            
             <div class="texto">
                 
                 <p class="text-justify  ml-2 mr-2" >{{ site.descricao }}</p>
