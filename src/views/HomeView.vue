@@ -13,6 +13,8 @@
       e sua veracidade.
     </p>
 
+    
+
   <v-divider class = "mr-4 ml-4"></v-divider>
 
     <h3 class="tituloHome  text-center mb-3 mt-5">VERDADEIRO OU FALSO?</h3>
@@ -31,6 +33,7 @@
 
 
   </div>
+
 </template>
 
 <script>
