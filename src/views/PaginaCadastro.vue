@@ -9,7 +9,7 @@
         v-model="name"
         :counter="10"
         :rules="nameRules"
-        label="Nome"
+        label="Site Recomendado"
         required
       ></v-text-field>
 
@@ -23,14 +23,49 @@
       <v-select
         v-model="select"
         :items="items"
-        :rules="[(v) => !!v || 'Nos diga o que você faz']"
-        label="O que você faz?"
+        :rules="[(v) => !!v || 'Nos diga a função primrária deste site']"
+        label="Assunto do site"
         required
       ></v-select>
 
-      <v-btn :disabled="!valid" color="success" class="mr-4" @click="validate">
-        Cadastrar
-      </v-btn>
+      
+        <v-dialog
+        v-model="dialog"
+        width="500" :disabled="!valid" color="success" class="mr-4" @click="validate">
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          color="light green"
+          dark
+          v-bind="attrs"
+          v-on="on"
+        >
+          Enviar
+        </v-btn>
+      </template>
+
+      <v-card>
+        <v-card-title class="text-h6 grey lighten-2">
+          Obrigado por sua contribução.
+        </v-card-title>
+
+        <v-card-text>
+          Seus dados fora enviados para análise de um moderador! 
+        </v-card-text>
+
+        <v-divider></v-divider>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn
+            color="primary"
+            text
+            @click="dialog = false"
+          >
+            OK!
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
 
       <v-btn color="error" class="mr-4" @click="reset"> Limpar campos </v-btn>
     </v-form>
@@ -43,7 +78,7 @@ export default {
     valid: true,
     name: "",
     nameRules: [
-      (v) => !!v || "Digite se nome",
+      (v) => !!v || "Digite o link do site",
       (v) => (v && v.length <= 10) || "O nome deve ter menos de 10 caracteres",
     ],
     email: "",
