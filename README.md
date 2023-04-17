@@ -1,5 +1,7 @@
 # equipe-19
 
+This project was made for a hackathon called "Decola". This was part of a recruitment process for the company "Iteris Consultoria e Software".
+
 ## Project setup
 ```
 npm install
